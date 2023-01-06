@@ -13,4 +13,5 @@ export default defineConfig({
     },
     baseUrl: 'http://192.168.43.227',
   },
+   projectId: "6pvvnc",
 })
