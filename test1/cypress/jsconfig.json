@@ -1,0 +1,15 @@
+ { 
+   "include": ["./**/*.js"],
+  "exclude": ["cypress/types/lodash/**/*.js", "./**/**/lodash"],
+  "compilerOptions": {
+    "types": ["cypress", "@percy/cypress"],
+    "lib": ["es2015", "dom"],
+    "isolatedModules": false,
+    "allowJs": true,
+    "noEmit": true
+  },
+
+  "typeAcquisition": {
+    "include": ["jquery"]
+  }
+}
