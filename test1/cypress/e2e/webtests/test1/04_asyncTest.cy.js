@@ -1,3 +1,6 @@
+require("dotenv").config()
+
+
 describe("Async test", ()=>{
     beforeEach(()=>{ 
         cy.visit("${process.env.BASE_URL}")

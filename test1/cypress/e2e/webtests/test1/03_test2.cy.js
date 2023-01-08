@@ -1,5 +1,5 @@
 /// <reference types="Cypress"/>
-
+require("dotenv").config()
 
 console.log(Cypress.env())
 
