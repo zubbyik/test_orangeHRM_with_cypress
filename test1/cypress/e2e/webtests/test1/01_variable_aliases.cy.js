@@ -1,7 +1,10 @@
+require('dotenv').config()
+
+
 describe("Testing how variable and aliases work", () => {
   let elem = []
   beforeEach(() => {
-    cy.visit("/");
+    cy.visit(process.env.BASE_URL);
     cy.get("#txtUsername").type("admin");
     cy.get("#txtPassword").type("!1Winner75");
     cy.get("#btnLogin").click();

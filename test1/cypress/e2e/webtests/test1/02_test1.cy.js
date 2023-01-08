@@ -5,7 +5,7 @@
 
 describe("This is the first test", ()=>{
     beforeEach(()=>{
-        cy.visit("http://192.168.43.227")
+        cy.visit(process.env.BASE_URL)
     })
 
     it("This will check the login page for title", ()=>{

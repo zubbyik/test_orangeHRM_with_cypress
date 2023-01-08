@@ -5,7 +5,7 @@ console.log(Cypress.env())
 
 describe("This is the beginning of the", ()=>{
     it("The initial console setup ", ()=>{
-        cy.visit('/')
+        cy.visit(process.env.BASE_URL)
         cy.get("#txtUsername")
         .type("admin")
        cy.get("#txtPassword").clear()
